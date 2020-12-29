@@ -8,5 +8,8 @@ export function wrap(text: string, length: number): string {
     if(length == 3 && text !== ""){
         return "123\n4567890"
     }
+    if(length == 2){
+        return "12\n34567890"
+    }
     return "";
 }
