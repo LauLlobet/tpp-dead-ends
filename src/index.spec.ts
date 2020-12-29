@@ -7,6 +7,7 @@ describe('sample test-suite', () => {
         expect(wrap(3, "")).eql(""); //nil -> constant
         expect(wrap(10, "word")).eql("word"); //constant -> constant+
         expect(wrap(4, "word word")).eql("word\nword"); //constant -> constant+
+        expect(wrap(4, "word word word")).eql("word\nword\nword"); //constant -> constant+
     });
 });
 
