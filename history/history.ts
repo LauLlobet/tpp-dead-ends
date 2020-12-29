@@ -14,5 +14,8 @@ describe('sample test-suite', () => {
 //-------- IMPLEMENTATION --------
 
 export function wrap(length: number, text: string): string {
-    return ""; // nil -> constant
+    if(text == undefined){ // unconditional -> conditional
+        return ""; // nil -> constant
+    }
+    return text; // constant -> scalar
 }
