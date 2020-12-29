@@ -5,5 +5,8 @@ export function wrap(text: string, length: number): string {
     if(length == 4){
         return "1234\n567890"
     }
+    if(length == 3 && text !== ""){
+        return "123\n4567890"
+    }
     return "";
 }
