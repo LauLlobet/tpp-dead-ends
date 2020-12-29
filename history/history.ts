@@ -8,6 +8,7 @@ describe('sample test-suite', () => {
     it("handle long words", () => {
         expect(wrap("1234567890",5)).equal("12345\n67890");
         expect(wrap("1234567890",4)).equal("1234\n567890");
+        expect(wrap("1234567890",3)).equal("123\n4567890");
     })
 });
 
